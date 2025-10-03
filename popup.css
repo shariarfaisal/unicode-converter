@@ -1,0 +1,408 @@
+/* Extension Popup Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 380px;
+  min-height: 400px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background: #f8f9fa;
+  color: #333;
+}
+
+.popup-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Header */
+.popup-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 16px 20px;
+  text-align: center;
+}
+
+.popup-header h1 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Toggle Section */
+.toggle-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background: white;
+  border-bottom: 1px solid #e9ecef;
+  gap: 12px;
+}
+
+.toggle-label {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.toggle-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.toggle-description {
+  font-size: 12px;
+  color: #6c757d;
+  line-height: 1.4;
+}
+
+/* Toggle Switch */
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 26px;
+  flex-shrink: 0;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.3s;
+  border-radius: 26px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.3s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+input:checked + .slider:before {
+  transform: translateX(22px);
+}
+
+/* Input Section */
+.input-section {
+  padding: 16px 20px;
+  background: white;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.input-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  color: #495057;
+  margin-bottom: 8px;
+}
+
+#textInput {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 2px solid #dee2e6;
+  border-radius: 6px;
+  resize: vertical;
+  font-family: inherit;
+  transition: border-color 0.15s;
+}
+
+#textInput:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+#textInput::placeholder {
+  color: #adb5bd;
+}
+
+/* Styles Section */
+.styles-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  overflow: hidden;
+}
+
+.styles-header {
+  padding: 12px 20px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #6c757d;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.styles-list {
+  flex: 1;
+  overflow-y: auto;
+  max-height: 320px;
+}
+
+/* Custom scrollbar */
+.styles-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.styles-list::-webkit-scrollbar-track {
+  background: #f8f9fa;
+}
+
+.styles-list::-webkit-scrollbar-thumb {
+  background: #cbd5e0;
+  border-radius: 4px;
+}
+
+.styles-list::-webkit-scrollbar-thumb:hover {
+  background: #a0aec0;
+}
+
+/* Empty State */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  color: #adb5bd;
+  text-align: center;
+}
+
+.empty-state svg {
+  margin-bottom: 12px;
+  opacity: 0.5;
+}
+
+.empty-state p {
+  font-size: 13px;
+}
+
+/* Style Item */
+.style-item {
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+  border-bottom: 1px solid #f1f3f5;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.style-item:last-child {
+  border-bottom: none;
+}
+
+.style-item:hover {
+  background-color: #f8f9fa;
+}
+
+.style-item:active {
+  background-color: #e9ecef;
+}
+
+.style-item.copied {
+  background-color: #d4edda;
+  animation: copyFlash 0.5s ease;
+}
+
+@keyframes copyFlash {
+  0%, 100% { background-color: transparent; }
+  50% { background-color: #d4edda; }
+}
+
+/* Special styling for Normal Text option */
+.style-item-normal {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  border-bottom: 2px solid #38bdf8 !important;
+}
+
+.style-item-normal:hover {
+  background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
+}
+
+.style-item-normal:active {
+  background: linear-gradient(135deg, #bae6fd 0%, #7dd3fc 100%);
+}
+
+.style-item-normal.copied {
+  background: linear-gradient(135deg, #d4edda 0%, #c3f0ca 100%);
+}
+
+.style-item-normal .style-name {
+  color: #0284c7;
+  font-weight: 600;
+}
+
+.style-item-normal .style-preview {
+  color: #0c4a6e;
+}
+
+.style-name {
+  font-size: 11px;
+  color: #6c757d;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.style-preview {
+  font-size: 15px;
+  color: #212529;
+  word-break: break-word;
+  line-height: 1.4;
+  user-select: text;
+}
+
+/* Footer */
+.popup-footer {
+  padding: 12px 20px;
+  background: #f8f9fa;
+  border-top: 1px solid #e9ecef;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.copy-status {
+  font-size: 12px;
+  color: #28a745;
+  font-weight: 500;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.copy-status.show {
+  opacity: 1;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #1a1a1a;
+    color: #e0e0e0;
+  }
+
+  .toggle-section,
+  .input-section,
+  .styles-section {
+    background: #2d2d2d;
+    border-bottom-color: #404040;
+  }
+
+  .toggle-text {
+    color: #e0e0e0;
+  }
+
+  .toggle-description {
+    color: #999;
+  }
+
+  .slider {
+    background-color: #555;
+  }
+
+  .input-label {
+    color: #b0b0b0;
+  }
+
+  #textInput {
+    background: #1a1a1a;
+    border-color: #404040;
+    color: #e0e0e0;
+  }
+
+  #textInput:focus {
+    border-color: #667eea;
+  }
+
+  #textInput::placeholder {
+    color: #666;
+  }
+
+  .styles-header {
+    background: #252525;
+    border-bottom-color: #404040;
+    color: #999;
+  }
+
+  .styles-list::-webkit-scrollbar-track {
+    background: #1a1a1a;
+  }
+
+  .styles-list::-webkit-scrollbar-thumb {
+    background: #555;
+  }
+
+  .styles-list::-webkit-scrollbar-thumb:hover {
+    background: #777;
+  }
+
+  .empty-state {
+    color: #666;
+  }
+
+  .style-item {
+    border-bottom-color: #404040;
+  }
+
+  .style-item:hover {
+    background-color: #3a3a3a;
+  }
+
+  .style-item:active {
+    background-color: #454545;
+  }
+
+  .style-name {
+    color: #999;
+  }
+
+  .style-preview {
+    color: #e0e0e0;
+  }
+
+  .popup-footer {
+    background: #252525;
+    border-top-color: #404040;
+  }
+}

@@ -1,0 +1,18 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="128" height="128" rx="24" fill="url(#gradient)"/>
+
+  <!-- Gradient -->
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Bold "A" symbol -->
+  <text x="64" y="88" font-family="Arial, sans-serif" font-size="72" font-weight="bold" text-anchor="middle" fill="white">A</text>
+
+  <!-- Small "a" subscript to show transformation -->
+  <text x="95" y="95" font-family="Arial, sans-serif" font-size="28" font-weight="normal" text-anchor="middle" fill="white" opacity="0.8">ᵃ</text>
+</svg>

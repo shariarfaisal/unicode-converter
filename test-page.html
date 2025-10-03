@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unicode Text Formatter - Test Page</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      line-height: 1.6;
+      background: #f5f5f5;
+    }
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #667eea;
+      margin-bottom: 10px;
+    }
+    .test-area {
+      background: #f8f9fa;
+      border: 2px dashed #dee2e6;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 20px 0;
+    }
+    .test-text {
+      font-size: 18px;
+      margin: 15px 0;
+      user-select: text;
+      cursor: text;
+    }
+    .instruction {
+      background: #e7f3ff;
+      border-left: 4px solid #2196F3;
+      padding: 15px;
+      margin: 20px 0;
+      border-radius: 4px;
+    }
+    textarea {
+      width: 100%;
+      min-height: 100px;
+      padding: 15px;
+      font-size: 16px;
+      border: 2px solid #dee2e6;
+      border-radius: 8px;
+      font-family: inherit;
+      resize: vertical;
+    }
+    textarea:focus {
+      outline: none;
+      border-color: #667eea;
+    }
+    .example {
+      background: #f0f0f0;
+      padding: 10px;
+      border-radius: 4px;
+      font-family: monospace;
+      margin: 10px 0;
+    }
+    .success {
+      background: #d4edda;
+      border-left: 4px solid #28a745;
+      padding: 15px;
+      margin: 20px 0;
+      border-radius: 4px;
+      color: #155724;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎨 Unicode Text Formatter - Test Page</h1>
+    <p>Use this page to test your Chrome extension!</p>
+
+    <div class="instruction">
+      <strong>📝 How to test:</strong>
+      <ol>
+        <li>Install the extension following INSTALL.md</li>
+        <li>Select any text below with your mouse</li>
+        <li>A popup will appear with Unicode style options</li>
+        <li>Click any style to replace the selected text</li>
+      </ol>
+    </div>
+
+    <div class="test-area">
+      <h3>✨ Test Area 1: Regular Paragraphs</h3>
+      <p class="test-text">
+        Select this text and make it bold! This is a simple paragraph where you can test the extension.
+      </p>
+      <p class="test-text">
+        Try making this text italic or script style. The possibilities are endless!
+      </p>
+      <p class="test-text">
+        Transform this into monospace for a code-like appearance.
+      </p>
+    </div>
+
+    <div class="test-area">
+      <h3>📝 Test Area 2: Editable Text Area</h3>
+      <textarea placeholder="Type or paste text here, then select it to apply Unicode styles...">This is editable text. Select any part of this text and apply different Unicode styles. You can type new text and format it too!</textarea>
+    </div>
+
+    <div class="test-area">
+      <h3>🎯 Test Area 3: Single Words</h3>
+      <p class="test-text">
+        Make <span>this</span> word bold, <span>that</span> word italic, and <span>those</span> words fancy!
+      </p>
+    </div>
+
+    <div class="test-area">
+      <h3>🔢 Test Area 4: Numbers and Mixed Content</h3>
+      <p class="test-text">
+        The price is $99.99 for version 2.0 released in 2024.
+      </p>
+      <p class="test-text">
+        Call us at 555-1234 or visit Suite 100 on Floor 5.
+      </p>
+    </div>
+
+    <div class="success">
+      <strong>✅ Expected Results:</strong>
+      <div class="example">Regular text → 𝗕𝗼𝗹𝗱 𝘁𝗲𝘅𝘁 (Bold)</div>
+      <div class="example">Regular text → 𝘙𝘦𝘨𝘶𝘭𝘢𝘳 𝘵𝘦𝘹𝘵 (Italic)</div>
+      <div class="example">Regular text → 𝚁𝚎𝚐𝚞𝚕𝚊𝚛 𝚝𝚎𝚡𝚝 (Monospace)</div>
+      <div class="example">Regular text → 𝓡𝑒𝑔𝓊𝓁𝒶𝓇 𝓉𝑒𝓍𝓉 (Script)</div>
+    </div>
+
+    <div class="instruction">
+      <strong>💡 Pro Tips:</strong>
+      <ul>
+        <li>You can select text across multiple words</li>
+        <li>The popup follows your selection</li>
+        <li>Works in text areas, input fields, and regular text</li>
+        <li>Compatible with contenteditable elements</li>
+      </ul>
+    </div>
+
+    <hr style="margin: 30px 0; border: none; border-top: 2px solid #dee2e6;">
+
+    <h3>🌐 Real-World Use Cases</h3>
+    <p>Once you've tested here, try it on:</p>
+    <ul>
+      <li><strong>Twitter/X:</strong> Make your tweets stand out</li>
+      <li><strong>LinkedIn:</strong> Emphasize key points in posts</li>
+      <li><strong>Discord:</strong> Bold important announcements</li>
+      <li><strong>Reddit:</strong> Format comments creatively</li>
+      <li><strong>WhatsApp Web:</strong> Send styled messages</li>
+      <li><strong>Email:</strong> Highlight important text in web-based email</li>
+    </ul>
+
+    <div style="margin-top: 40px; padding-top: 20px; border-top: 2px solid #dee2e6; text-align: center; color: #666;">
+      <p>Unicode Text Formatter Extension | Built with ❤️ for better text formatting everywhere</p>
+    </div>
+  </div>
+</body>
+</html>
