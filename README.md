@@ -2,6 +2,10 @@
 
 Transform selected text into Unicode styled variants (bold, italic, script, and more) for use anywhere online where markdown isn't supported!
 
+## 📦 Repository
+
+GitHub: [https://github.com/shariarfaisal/unicode-converter](https://github.com/shariarfaisal/unicode-converter)
+
 ## ✨ Features
 
 ### 🎯 Dual Interface
@@ -223,17 +227,26 @@ Excited to share: We're 𝗵𝗶𝗿𝗶𝗻𝗴! Join our team as a 𝘚𝘦�
 
 ## 🤝 Contributing
 
+Contributions are welcome! Please visit our GitHub repository:
+
+🔗 **[https://github.com/shariarfaisal/unicode-converter](https://github.com/shariarfaisal/unicode-converter)**
+
 Feel free to:
-- Report bugs or issues
-- Suggest new Unicode styles
-- Improve the UI/UX
-- Add new features
+- 🐛 Report bugs or issues
+- 💡 Suggest new Unicode styles
+- 🎨 Improve the UI/UX
+- ✨ Add new features
+- 📖 Improve documentation
 
 ## 📄 License
 
 Free to use and modify for personal and commercial purposes.
 
 ## 🙏 Credits
+
+**Author:** [Shariar Faisal](https://github.com/shariarfaisal)
+
+**Repository:** [https://github.com/shariarfaisal/unicode-converter](https://github.com/shariarfaisal/unicode-converter)
 
 Built with ❤️ using:
 - Unicode Mathematical Alphanumeric Symbols

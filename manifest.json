@@ -3,6 +3,8 @@
   "name": "Unicode Text Formatter",
   "version": "2.0.0",
   "description": "Convert selected text to Unicode bold, italic, and other styles for use anywhere online",
+  "author": "Shariar Faisal",
+  "homepage_url": "https://github.com/shariarfaisal/unicode-converter",
   "permissions": [
     "activeTab",
     "storage",

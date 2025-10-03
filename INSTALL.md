@@ -175,6 +175,10 @@ The extension is ready to use. Try both methods and see which works best for you
 
 ---
 
+## 📦 GitHub Repository
+
+🔗 **[https://github.com/shariarfaisal/unicode-converter](https://github.com/shariarfaisal/unicode-converter)**
+
 **Need more help?** Check the full [README.md](README.md) for detailed documentation!
 
 **Happy Formatting!** ✨

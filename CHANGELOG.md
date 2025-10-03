@@ -1,5 +1,10 @@
 # Changelog
 
+## 📦 Repository
+GitHub: [https://github.com/shariarfaisal/unicode-converter](https://github.com/shariarfaisal/unicode-converter)
+
+---
+
 ## Version 2.0.0 - Enhanced Edition (Current)
 
 ### 🎉 Major Features Added
